@@ -1,0 +1,31 @@
+[init]
+	defaultBranch = main
+
+[color]
+	ui = auto
+
+[user]
+	email = chamberlainwebberj@gmail.com
+	name = Guy Chamberlain-Webber
+
+[alias]
+	aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+	cm = commit
+	co = checkout
+	st = status
+	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+
+[diff]
+	submodule = log
+	tool = code
+
+[log]
+	abbrevCommit = true
+	decorate = false
+
+[status]
+	submoduleSummary = true
+	showUntrackedFiles = all
+
+[help]
+	autocorrect = 10
